@@ -15,9 +15,9 @@ public class MultiThreadServer {
 		ServerSocket serverSocket = null;
 		Socket socket = null;
 		try {
-			serverSocket = new ServerSocket(5001);
+			serverSocket = new ServerSocket(5000);
 			socket = serverSocket.accept();
-			System.out.println("포트 번호 - 5001 할당 완료");
+			System.out.println("포트 번호 - 5000 할당 완료");
 
 			// 클라이언트로 데이터를 받을 입력 스트림 필요
 			BufferedReader socketReader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
